@@ -1,0 +1,449 @@
+[12-01 20:18:12,202, 92] main - ERROR launch.c  : Failed to make symlink ..\out\12-01.20_18_12.rev_390809\server.log(->/logs/server.log)
+java.nio.file.FileSystemException: ..\out\12-01.20_18_12.rev_390809\server.log: Клиент не обладает требуемыми правами.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(WindowsFileSystemProvider.java:593)
+	at java.nio.file.Files.createSymbolicLink(Files.java:988)
+	at launch.c.a(c.java:8)
+	at launch.c.a(c.java:9)
+	at launch.c.a(c.java:28)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+[12-01 20:18:12,205, 95] main - ERROR launch.c  : Failed to make symlink ..\out\12-01.20_18_12.rev_390809\lags.txt(->/statistics/System/Performance/LagDetector/lags.txt)
+java.nio.file.FileSystemException: ..\out\12-01.20_18_12.rev_390809\lags.txt: Клиент не обладает требуемыми правами.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(WindowsFileSystemProvider.java:593)
+	at java.nio.file.Files.createSymbolicLink(Files.java:988)
+	at launch.c.a(c.java:8)
+	at launch.c.a(c.java:40)
+	at launch.c.a(c.java:28)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+[12-01 20:18:12,206, 96] main - ERROR launch.c  : Failed to make symlink ..\out\12-01.20_18_12.rev_390809\..\00_LAST(->/)
+java.nio.file.FileSystemException: ..\out\12-01.20_18_12.rev_390809\..\00_LAST: Клиент не обладает требуемыми правами.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(WindowsFileSystemProvider.java:593)
+	at java.nio.file.Files.createSymbolicLink(Files.java:988)
+	at launch.c.a(c.java:8)
+	at launch.c.a(c.java:54)
+	at launch.c.a(c.java:28)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+[12-01 20:18:12,219, 109] main - INFO  launch.c  : Current process id from jvm name = 14308
+[12-01 20:18:12,219, 109] main - INFO  launch.c  : Starting server at revision 390809 (RC_4.0.02)
+[12-01 20:18:12,221, 111] main - INFO  launch.c  : Starting server of client net version 8455
+[12-01 20:18:12,221, 111] main - INFO  launch.c  : Starting server of client-account net version 73
+[12-01 20:18:12,222, 112] main - INFO  launch.c  : Starting server of account-frontEnd net version 48
+[12-01 20:18:12,261, 151] main - INFO  launch.c  : loading config from shard.xml
+[12-01 20:18:29,667, 17557] main - INFO  launch.c  : loading from cfg "shard.xml", server "billingServer", deploy = 127.0.0.1
+[12-01 20:18:29,668, 17558] main - INFO  launch.c  : Server type is "billingServer"
+[12-01 20:18:29,669, 17559] main - INFO  launch.c  : Server name "test_trunk_shard"
+[12-01 20:18:29,678, 17568] main - INFO  tools.reflection.classLoading.l  : Using URLClassLoader classpath
+[12-01 20:18:29,682, 17572] main - INFO  tools.reflection.classLoading.h  : Loading classes from [C:\server\server_bin\billingServer\cfg\server\bin|[[DEBUG:^(?=.*(vendor)).*$], [WARN:.*]], C:\server\server_bin\billingServer\cfg\jars|[[DEBUG:^(?=.*(vendor)).*$], [WARN:.*]], C:\server\server_bin\billingServer\cfg\vendor|[[DEBUG:^(?=.*(vendor)).*$], [WARN:.*]], C:\server\server_bin\billingServer\cfg\target\test-classes|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\target\test|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\target\classes|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\target\production|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\classes\production|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\classes\test|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\jars_local|[[WARN:.*]], C:\server\server_bin\billingServer\cfg\server_bin\jars|[[DEBUG:^(?=.*(vendor)).*$], [WARN:.*]], C:\server\server_bin\billingServer\cfg\server_bin\jars_local|[[WARN:.*]]](cp = [C:\server\server_bin\jars\billingserver.BillingServerMain.jar])...
+[12-01 20:18:29,682, 17572] main - INFO  tools.reflection.classLoading.h  : Current base path: C:\server\server_bin\billingServer\cfg
+[12-01 20:18:30,036, 17926] main - WARN  tools.reflection.classLoading.h  : Duplicated 19 classes in [C:\server\server_bin\jars\vendors\commons-beanutils-1.8.0.jar, C:\server\server_bin\jars\vendors\commons-beanutils-bean-collections-1.8.0.jar], for example 'org.apache.commons.beanutils.BeanMap$Entry"
+[12-01 20:18:30,036, 17926] main - WARN  tools.reflection.classLoading.h  : Duplicated 108 classes in [C:\server\server_bin\jars\vendors\commons-beanutils-1.8.0.jar, C:\server\server_bin\jars\vendors\commons-beanutils-core-1.8.0.jar], for example 'org.apache.commons.beanutils.locale.converters.DateLocaleConverter"
+[12-01 20:18:30,038, 17928] main - WARN  tools.reflection.classLoading.h  : Duplicated 10 classes in [C:\server\server_bin\jars\vendors\commons-beanutils-1.8.0.jar, C:\server\server_bin\jars\vendors\commons-beanutils-core-1.8.0.jar, C:\server\server_bin\jars\vendors\commons-collections-3.1.jar], for example 'org.apache.commons.collections.FastHashMap$KeySet"
+[12-01 20:18:30,039, 17929] main - WARN  tools.reflection.classLoading.h  : Duplicated 21 classes in [C:\server\server_bin\jars\vendors\hamcrest-core-1.1.jar, C:\server\server_bin\jars\vendors\junit-4.8.2.jar], for example 'org.hamcrest.internal.SelfDescribingValueIterator"
+[12-01 20:18:30,040, 17930] main - WARN  tools.reflection.classLoading.h  : Duplicated 256 classes in [C:\server\server_bin\jars\vendors\log4j-1.2.14.jar, C:\server\server_bin\jars\vendors\log4j-1.2.16.jar], for example 'org.apache.log4j.lf5.viewer.LogBrokerMonitor$LogBrokerMonitorWindowAdaptor"
+[12-01 20:18:30,040, 17930] main - WARN  tools.reflection.classLoading.h  : Duplicated 16 classes in [C:\server\server_bin\jars\vendors\log4jdbc3-1.2beta2.jar, C:\server\server_bin\jars\vendors\log4jdbc4-1.2beta2.jar], for example 'net.sf.log4jdbc.ConnectionSpy"
+[12-01 20:18:30,041, 17931] main - WARN  tools.reflection.classLoading.h  : Duplicated 42 classes in [C:\server\server_bin\jars\vendors\servlet-api-2.5-20081211.jar, C:\server\server_bin\jars\vendors\servlet-api-2.5-6.1.3.jar], for example 'javax.servlet.Filter"
+[12-01 20:18:30,042, 17932] main - WARN  tools.reflection.classLoading.h  : Duplicated 29 classes in [C:\server\server_bin\jars\vendors\uncommons-math-1.0.2.jar, C:\server\server_bin\jars\vendors\uncommons-maths-1.0.2.jar], for example 'org.uncommons.maths.statistics.EmptyDataSetException"
+[12-01 20:18:30,242, 18132] main - INFO  tools.reflection.classLoading.m  : Loading 29457 classes...
+[12-01 20:18:31,693, 19583] Task0 - WARN  tools.reflection.classLoading.m  : Can not load class codegen.test.JavaSourceCodeTest. class java.lang.NoClassDefFoundError: testsSupport/baseTestsRunners/BaseTester
+[12-01 20:18:32,214, 20104] Task3 - WARN  tools.reflection.classLoading.m  : Can not load class linksstorage.tests.LinksStorageTest. class java.lang.NoClassDefFoundError: system/base/tester/SystemTester
+[12-01 20:18:32,555, 20445] Task0 - WARN  tools.reflection.classLoading.m  : Can not load class codegen.test.SourceCodeTest. class java.lang.NoClassDefFoundError: testsSupport/baseTestsRunners/BaseTester
+[12-01 20:18:32,682, 20572] Task3 - WARN  tools.reflection.classLoading.m  : Can not load class codegen.test.SourceCodeStaticTest. class java.lang.NoClassDefFoundError: testsSupport/baseTestsRunners/BaseTester
+[12-01 20:18:32,869, 20759] main - INFO  tools.reflection.classLoading.m  : Finished in 2.626 sec
+[12-01 20:18:32,869, 20759] main - INFO  tools.reflection.classLoading.m  : Checking class dependencies
+[12-01 20:18:32,913, 20803] Task2 - WARN  tools.reflection.classLoading.m  : Coud not load class class linksstorage.ProjectFilesLinksImpl. excluding from loading : Ltools/containers/hashMaps/MultiHashMap;
+[12-01 20:18:32,994, 20884] Task3 - WARN  tools.reflection.classLoading.m  : Coud not load class class linksstorage.SqlXdbLinksImpl. excluding from loading : dbcommons/exception/DatabaseException
+[12-01 20:18:33,696, 21586] main - INFO  tools.reflection.classLoading.m  : Finished in 0.827 sec
+[12-01 20:18:33,696, 21586] main - INFO  tools.reflection.classLoading.m  : 6 classes loading errors
+[12-01 20:18:33,934, 21824] main - INFO  tools.reflection.classLoading.h  : 29480 classes loaded in 4.252 sec
+[12-01 20:18:34,841, 22731] main - INFO  logging.init.Logging  : About to shutdown channel engines: []
+[12-01 20:18:34,842, 22732] main - INFO  logging.init.Logging  : Completed shutdown of channel engines []
+[12-01 20:18:34,852, 22742] BackgroundChannelWriter.LoggerThread - INFO  logging.channels.BackgroundChannelWriter  : Background channel logger started
+[12-01 20:18:35,125, 23015] main - INFO  dbcommons.hibernate.r  : **** c Database connected. Connection url: jdbc:mysql://127.0.0.1/allods_billing_RC_4_0_02?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true&rewriteBatchedStatements=true&allowMultiQueries=false&useLocalSessionState=true&elideSetAutoCommits=true&sessionVariables=tx_isolation='READ-COMMITTED',autocommit=0&connectTimeout=50000000&socketTimeout=5000000000 username: root
+[12-01 20:18:35,362, 23252] main - WARN  org.hibernate.ejb.Ejb3Configuration  : hibernate.connection.autocommit = false break the EJB3 specification
+[12-01 20:18:35,362, 23252] main - WARN  org.hibernate.ejb.Ejb3Configuration  : hibernate.connection.autocommit = false break the EJB3 specification
+[12-01 20:18:35,407, 23297] main - INFO  com.mchange.v2.log.MLog  : MLog clients using log4j logging.
+[12-01 20:18:35,474, 23364] main - INFO  com.mchange.v2.c3p0.C3P0Registry  : Initializing c3p0-0.9.2-pre4 [built 16-June-2012 20:16:37 -0400; debug? true; trace: 10]
+[12-01 20:18:35,548, 23438] main - INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  : Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5611d412 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@cf9c1c4d [ acquireIncrement -> 3, acquireRetryAttempts -> 1, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99ztkfync8qcf1h|77d1af15, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@5918d695 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hgeby99ztkfync8qcf1h|4742dc6d, jdbcUrl -> jdbc:mysql://127.0.0.1/allods_billing_RC_4_0_02?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true&rewriteBatchedStatements=true&allowMultiQueries=false&useLocalSessionState=true&elideSetAutoCommits=true&sessionVariables=tx_isolation='READ-COMMITTED',autocommit=0&connectTimeout=50000000&socketTimeout=5000000000, properties -> {user=******, password=******, autocommit=false, release_mode=after_statement} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hgeby99ztkfync8qcf1h|683530c3, numHelperThreads -> 3 ]
+[12-01 20:18:44,738, 32628] C3P0PooledConnectionPoolManager-Helper Thread-#0 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4cb037a8 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:44,738, 32628] C3P0PooledConnectionPoolManager-Helper Thread-#1 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@45161ded -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:44,738, 32628] C3P0PooledConnectionPoolManager-Helper Thread-#2 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2f06d60a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:44,741, 32631] C3P0PooledConnectionPoolManager-Helper Thread-#0 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:44,747, 32637] C3P0PooledConnectionPoolManager-Helper Thread-#2 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:44,747, 32637] C3P0PooledConnectionPoolManager-Helper Thread-#1 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:44,749, 32639] main - WARN  org.hibernate.cfg.SettingsFactory  : Could not obtain connection to query metadata
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:641)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:906)
+	at dbcommons.hibernate.r.V(r.java:87)
+	at dbcommons.hibernate.r.<init>(r.java:102)
+	at billingserver.billingdb.jdbcimpl.c.<init>(c.java:2)
+	at billingserver.billingdb.jdbcimpl.BillingDBContextFactoryJDBCImpl.a(BillingDBContextFactoryJDBCImpl.java:4)
+	at billingserver.g.a(g.java:16)
+	at billingserver.g.<init>(g.java:22)
+	at billingserver.o.startSync(o.java:18)
+	at launch.b.a(b.java:21)
+	at launch.a.a(a.java:4)
+	at launch.c.a(c.java:55)
+	at launch.c.a(c.java:4)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1406)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:594)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:514)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:707)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:634)
+	... 20 more
+[12-01 20:18:44,749, 32639] main - WARN  org.hibernate.cfg.SettingsFactory  : Could not obtain connection to query metadata
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:641)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:906)
+	at dbcommons.hibernate.r.V(r.java:87)
+	at dbcommons.hibernate.r.<init>(r.java:102)
+	at billingserver.billingdb.jdbcimpl.c.<init>(c.java:2)
+	at billingserver.billingdb.jdbcimpl.BillingDBContextFactoryJDBCImpl.a(BillingDBContextFactoryJDBCImpl.java:4)
+	at billingserver.g.a(g.java:16)
+	at billingserver.g.<init>(g.java:22)
+	at billingserver.o.startSync(o.java:18)
+	at launch.b.a(b.java:21)
+	at launch.a.a(a.java:4)
+	at launch.c.a(c.java:55)
+	at launch.c.a(c.java:4)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1406)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:594)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:514)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:707)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:634)
+	... 20 more
+[12-01 20:18:44,769, 32659] main - WARN  org.hibernate.cfg.SettingsFactory  : Overriding release mode as connection provider does not support 'after_statement'
+[12-01 20:18:44,769, 32659] main - WARN  org.hibernate.cfg.SettingsFactory  : Overriding release mode as connection provider does not support 'after_statement'
+[12-01 20:18:44,897, 32787] main - WARN  org.hibernate.impl.SessionFactoryImpl  : JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()
+[12-01 20:18:44,897, 32787] main - WARN  org.hibernate.impl.SessionFactoryImpl  : JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()
+[12-01 20:18:44,932, 32822] main - INFO  TextLogger  : Create logger `QueryStatitstics`, file `../statistics/System/Performance/Database/QueryStatitstics.txt`, without rolling
+[12-01 20:18:53,982, 41872] C3P0PooledConnectionPoolManager-Helper Thread-#2 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7a52edbc -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:53,982, 41872] C3P0PooledConnectionPoolManager-Helper Thread-#1 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7d2d7eac -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:53,982, 41872] C3P0PooledConnectionPoolManager-Helper Thread-#0 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1e0389e8 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1013)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:987)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:982)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2158)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:152)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1074)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1061)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1796)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:943)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4113)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1308)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2336)
+	at com.mysql.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:2176)
+	... 19 more
+[12-01 20:18:53,983, 41873] C3P0PooledConnectionPoolManager-Helper Thread-#2 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:53,988, 41878] C3P0PooledConnectionPoolManager-Helper Thread-#0 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:53,988, 41878] C3P0PooledConnectionPoolManager-Helper Thread-#1 - WARN  com.mchange.v2.resourcepool.BasicResourcePool  : Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@296b6aed is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[12-01 20:18:53,991, 41881] main - WARN  org.hibernate.util.JDBCExceptionReporter  : SQL Error: 0, SQLState: null
+[12-01 20:18:53,991, 41881] main - WARN  org.hibernate.util.JDBCExceptionReporter  : SQL Error: 0, SQLState: null
+[12-01 20:18:53,991, 41881] main - ERROR org.hibernate.util.JDBCExceptionReporter  : Connections could not be acquired from the underlying database!
+[12-01 20:18:53,991, 41881] main - ERROR org.hibernate.util.JDBCExceptionReporter  : Connections could not be acquired from the underlying database!
+[12-01 20:18:53,998, 41888] main - ERROR verify  : unable to start server
+system.base.bc: org.apache.commons.configuration.ConfigurationException: dbcommons.c: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at billingserver.o.startSync(o.java:3)
+	at launch.b.a(b.java:21)
+	at launch.a.a(a.java:4)
+	at launch.c.a(c.java:55)
+	at launch.c.a(c.java:4)
+	at launch.c.a(c.java:35)
+	at billingserver.BillingServerMain.main(BillingServerMain.java:3)
+Caused by: org.apache.commons.configuration.ConfigurationException: dbcommons.c: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at billingserver.g.a(g.java:19)
+	at billingserver.g.<init>(g.java:22)
+	at billingserver.o.startSync(o.java:18)
+	... 6 more
+Caused by: dbcommons.c: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at dbcommons.hibernate.v.a(v.java:27)
+	at dbcommons.hibernate.r.a(r.java:29)
+	at dbcommons.hibernate.r.V(r.java:36)
+	at dbcommons.hibernate.r.<init>(r.java:102)
+	at billingserver.billingdb.jdbcimpl.c.<init>(c.java:2)
+	at billingserver.billingdb.jdbcimpl.BillingDBContextFactoryJDBCImpl.a(BillingDBContextFactoryJDBCImpl.java:4)
+	at billingserver.g.a(g.java:16)
+	... 8 more
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:641)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:78)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:446)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:167)
+	at org.hibernate.impl.SessionImpl.doWork(SessionImpl.java:1997)
+	at dbcommons.hibernate.v.a(v.java:8)
+	... 14 more
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1406)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:594)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:514)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:707)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:634)
+	... 20 more
