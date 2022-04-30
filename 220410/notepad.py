@@ -64,7 +64,7 @@ class Notepad:
         self.__thisTextArea.grid(sticky = N + E + S + W)
 
 
-        self.__thisFileMenu.add_command(label="New", command=self.__newFile)
+        self.__thisFileMenu.add_command(label="New", accelerator = 'Ctrl + N', command=self.__newFile)
 
         self.__thisFileMenu.add_command(label="Open", command=self.__openFile)
 
@@ -82,6 +82,7 @@ class Notepad:
         self.__thisEditMenu.add_command(label="Copy", command=self.__copy)
 
         self.__thisEditMenu.add_command(label="Paste", command=self.__paste)
+        self.__thisEditMenu.add_command(label='Search', command=self.__search)
 
         self.__thisMenuBar.add_cascade(label="Edit", menu=self.__thisEditMenu)
 
@@ -89,9 +90,10 @@ class Notepad:
 
         self.__thisMenuBar.add_cascade(label="Help", menu=self.__thisHelpMenu)
 
-        self.__thisButtonMenu.add_command(label='cut', command=self.__cut)
+        self.__thisButtonMenu.add_command(label='cut', accelerator = 'Ctrl + X', command=self.__cut)
         self.__thisButtonMenu.add_command(label='copy', command=self.__copy)
         self.__thisButtonMenu.add_command(label='paste', command=self.__paste)
+
 
         self.__root.config(menu=self.__thisMenuBar)
 
@@ -104,6 +106,8 @@ class Notepad:
 
         self.__thisTextArea.bind("<Control-Key-a>", self.__all_select)
         self.__thisTextArea.bind("<Control-Key-A>", self.__all_select)
+        self.__thisTextArea.bind("<Control-Key-n>", self.__newFile)
+        self.__thisTextArea.bind("<Control-Key-N>", self.__newFile)
         self.__root.bind("<Button-3>", self.__showMenu)
 
 
@@ -129,7 +133,7 @@ class Notepad:
             self.__thisTextArea.insert(1.0, file.read())
             file.close()
 
-    def __newFile(self):
+    def __newFile(self, event):
         self.__root.title(self.__thisTitle)
         self.__file = None
         self.__thisTextArea.delete(1.0, END)
@@ -168,6 +172,17 @@ class Notepad:
         self.__thisTextArea.mark_set(INSERT, "1.0")
         self.__thisTextArea.see(INSERT)
         return 'break'
+        
+    def __search(self):
+    	topsearch=Toplevel(self.__root)
+    	topsearch.geometry('300x30+200+250')
+    	label1=Label(topsearch,text='Find')
+    	label1.grid(row=0,column=0,padx=5)
+    	entry1=Entry(topsearch,width=20)
+    	entry1.grid(row=0,column=1,padx=5)
+    	button1 = Button(topsearch, text = 'Find')
+    	button1.grid(row=0,column=2)
+ 
 
     def __showMenu(self, e):
         self.__thisButtonMenu.post(e.x_root, e.y_root)
